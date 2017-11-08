@@ -4,20 +4,28 @@
 		<md-button class="aj-no-margin" aria-label="More" ng-click="openMore($mdMenu, $event)">
 			<ng-md-icon icon="more_vert" size="32" style="height:32px; width:32px;"></ng-md-icon>
 		</md-button>
-		<md-menu-content width="4">
-			<md-menu-item>
-				<md-button ng-click="">
-					Settings
+		<md-menu-content width="3">
+			<md-menu-item ng-hide="true"> <!-- Used to grab autofocus -->
+				<md-button>
+					Dummy
 				</md-button>
 			</md-menu-item>
 			<md-menu-item>
 				<md-button ng-click="">
+					<ng-md-icon icon="info" size="18" style="height:20px; width:20px; opacity: 0.87;"></ng-md-icon>
+					About
+				</md-button>
+			</md-menu-item>
+			<md-menu-item>
+				<md-button ng-click="">
+					<ng-md-icon icon="help" size="18" style="height:20px; width:20px; opacity: 0.87;"></ng-md-icon>
 					Help
 				</md-button>
 			</md-menu-item>
 			<md-menu-item>
 				<md-button ng-click="">
-					About
+					<ng-md-icon icon="settings" size="18" style="height:20px; width:20px; opacity: 0.87;"></ng-md-icon>
+					Settings
 				</md-button>
 			</md-menu-item>
 		</md-menu-content>
