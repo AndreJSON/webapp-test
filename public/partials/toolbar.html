@@ -1,25 +1,25 @@
 <md-toolbar class="md-whiteframe-z2" layout="row">
 	<h1 class="md-toolbar-tools">Don't be lazy!</h1>
-	<md-menu>
-	<md-button class="aj-no-margin" aria-label="More" ng-click="openMore($mdMenu, $event)">
-		<ng-md-icon icon="more_vert" size="40" style="height:40px; width: 40px;"></ng-md-icon>
-	</md-button>
-	<md-menu-content width="4">
-		<md-menu-item>
-			<md-button ng-click="">
-				Settings
-			</md-button>
-		</md-menu-item>
-		<md-menu-item>
-			<md-button ng-click="">
-				Help
-			</md-button>
-		</md-menu-item>
-		<md-menu-item>
-			<md-button ng-click="">
-				Something
-			</md-button>
-		</md-menu-item>
-	</md-menu-content>
-</md-menu>
+	<md-menu md-position-mode="target-right target">
+		<md-button class="aj-no-margin" aria-label="More" ng-click="openMore($mdMenu, $event)">
+			<ng-md-icon icon="more_vert" size="40" style="height:40px; width:40px;"></ng-md-icon>
+		</md-button>
+		<md-menu-content width="4">
+			<md-menu-item>
+				<md-button ng-click="">
+					Settings
+				</md-button>
+			</md-menu-item>
+			<md-menu-item>
+				<md-button ng-click="">
+					Help
+				</md-button>
+			</md-menu-item>
+			<md-menu-item>
+				<md-button ng-click="">
+					About
+				</md-button>
+			</md-menu-item>
+		</md-menu-content>
+	</md-menu>
 </md-toolbar>
