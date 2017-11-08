@@ -1,7 +1,7 @@
 <md-toolbar class="md-whiteframe-z2" layout="row">
 	<h1 class="md-toolbar-tools">Don't be lazy!</h1>
 	<md-menu md-position-mode="target-right target">
-		<md-button class="aj-no-margin" aria-label="More" ng-click="openMore($mdMenu, $event)">
+		<md-button aria-label="More" ng-click="openMore($mdMenu, $event)">
 			<ng-md-icon icon="more_vert" size="32" style="height:32px; width:32px;"></ng-md-icon>
 		</md-button>
 		<md-menu-content width="3">
@@ -11,19 +11,19 @@
 				</md-button>
 			</md-menu-item>
 			<md-menu-item>
-				<md-button ng-click="showAbout($event)">
+				<md-button ng-click="showDialog('about', $event)">
 					<ng-md-icon icon="info" size="18" style="height:20px; width:20px; opacity: 0.87;"></ng-md-icon>
 					About
 				</md-button>
 			</md-menu-item>
 			<md-menu-item>
-				<md-button ng-click="">
+				<md-button ng-click="showDialog('help', $event)">
 					<ng-md-icon icon="help" size="18" style="height:20px; width:20px; opacity: 0.87;"></ng-md-icon>
 					Help
 				</md-button>
 			</md-menu-item>
 			<md-menu-item>
-				<md-button ng-click="">
+				<md-button ng-click="showDialog('settings', $event)">
 					<ng-md-icon icon="settings" size="18" style="height:20px; width:20px; opacity: 0.87;"></ng-md-icon>
 					Settings
 				</md-button>

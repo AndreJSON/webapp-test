@@ -7,10 +7,10 @@ angular.module('app').controller('mainController', function ($scope, $log, $time
       $mdMenu.open(ev);
     };
 
-    $scope.showAbout = function(ev) {
+    $scope.showDialog = function(name, ev) {
     	$mdDialog.show({
 			controller: 'dialogController',
-			templateUrl: 'partials/about.html',
+			templateUrl: 'partials/' + name + '.html',
 			targetEvent: ev,
 			clickOutsideToClose: false
 		});
