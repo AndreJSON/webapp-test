@@ -10,7 +10,7 @@ angular.module('app', ['ngMaterial', 'ngMdIcons'])
 				'hue-2': '600',
 				'hue-3': 'A100'
 			})
-			.accentPalette('yellow', {
+			.accentPalette('purple', {
 				'default': '200'
 			});
 	});
