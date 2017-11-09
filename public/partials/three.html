@@ -1,1 +1,11 @@
-<h1 class="md-display-2">137 Points</h1>
+<md-list flex>
+	<md-subheader class="md-no-sticky">Rewards</md-subheader>
+	<md-divider></md-divider>
+	<md-list-item class="md-2-line" ng-repeat="item in rewards">
+		<div class="md-list-item-text" layout="column">
+			<h2 class="aj-no-margin-bottom">{{item.points}}</h2>
+			<md-progress-linear md-mode="determinate" value="{{77/item.points * 100}}"></md-progress-linear>
+			<p>{{item.what}}</p>
+		</div>
+	</md-list-item>
+</md-list>
