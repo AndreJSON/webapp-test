@@ -1,6 +1,6 @@
 /*global angular*/
 
-angular.module('app').controller('mainController', function ($scope, $log, $timeout, $mdDialog) {
+angular.module('app').controller('mainController', function ($scope, $log, $mdDialog) {
 	'use strict';
 
 	$scope.openMore = function($mdMenu, ev) {
@@ -15,10 +15,4 @@ angular.module('app').controller('mainController', function ($scope, $log, $time
 			clickOutsideToClose: false
 		});
     };
-	
-	function init() {
-		$log.info("Hello world!");
-	}
-	
-	$timeout(init);
 });
