@@ -3,6 +3,8 @@
 angular.module('app').controller('mainController', function ($scope, $log, $mdDialog) {
 	'use strict';
 
+	$scope.points = 137;
+
 	$scope.openMore = function($mdMenu, ev) {
       $mdMenu.open(ev);
     };

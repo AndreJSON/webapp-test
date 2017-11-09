@@ -1,5 +1,9 @@
 <md-toolbar class="md-whiteframe-z2" layout="row">
-	<h1 class="md-toolbar-tools">Don't be lazy!</h1>
+	<div class="md-toolbar-tools aj-no-padding-right">
+		<ng-md-icon icon="whatshot" size="32" style="height:32px; width:32px;"></ng-md-icon>
+		<div flex></div>
+		<h1>{{points}} Points</h1>
+	</div>
 	<md-menu md-position-mode="target-right target">
 		<md-button aria-label="More" ng-click="openMore($mdMenu, $event)">
 			<ng-md-icon icon="more_vert" size="32" style="height:32px; width:32px;"></ng-md-icon>
